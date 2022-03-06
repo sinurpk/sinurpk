@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head><title>Grid7-Contact</title>
+    <script type="text/javascript">  
+    function msg()
+    {
+      alert('Your data has been recorded succesfully!!');
+    }
+    </script>
+      
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+color: white;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #020202;
+  padding: 20px;
+  
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  
+
+}
+</style>
+</head>
+<body >
+ <div class="container flex">
+<div style="margin-left: 440px;">
+    <form name="form1" method="POST">
+      <div>
+    
+    <input type="text" id="fname" name="firstname" placeholder="First Name" >
+  </div>
+  <div>
+    
+    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+  </div>
+  <div>
+    <input type="text" id="lname" name="Email" placeholder="Email">
+    
+  </div>
+<div>
+    
+    <input type="text" name="number" placeholder="Phone Number">
+  </div>
+  <div>
+    <textarea id="subject" name="subject" placeholder="Which service you want please explain" style="height:200px"></textarea>
+  </div>
+  <div>
+    <input type="submit" value="Submit" onclick="msg()">
+  </div>
+  </form>
+</div>
+</div>
+</body>
+</html>
