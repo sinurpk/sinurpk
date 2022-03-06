@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>Inches to Feet Length Converter</title>
+<head>
+    <style>
+        body{
+            background-color: rgb(59, 240, 89);
+        }
+        h1 {  
+    text-align: center;  
+    padding: 23px;  
+    background-color: rgb(151, 29, 59);  
+    color: white;  
+    } 
+    h2 {  
+    text-align: center;  
+    } 
+    h4 {  
+    text-align: center;  
+    }
+    p{
+        text-align: center;
+        color: rgb(6, 24, 18);
+     }
+
+
+    </style>
+</head>
+<body>
+
+<h1>Length Converter</h1>
+<h4><p>Type a value in the Inches field to convert the value to Feet:</p></h4>
+
+<p>
+  <h2><label>Inches</label></h2>
+  <center><input id="inputInches" type="number" placeholder="Inches" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)"></center>
+</p>
+<h2><p>Feet: <span id="outputFeet"></span></p></h2>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputFeet").innerHTML=valNum*0.083333;
+}
+</script>
+</body>
+</html>
